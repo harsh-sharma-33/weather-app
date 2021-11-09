@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Weather App</title>
+  </head>
+  <body>
+    <main>
+      <div class="left">
+        <h3 class="brand">weather.Now</h3>
+        <div class="info">
+          <h1 class="degree">08</h1>
+          <div class="name-time">
+            <div class="name">London</div>
+            <div class="time">06:09 - Sunday, 6 Oct 19</div>
+          </div>
+          <div class="icon-weather">
+            <div class="icon">
+              <ion-icon name="rainy-outline"></ion-icon>
+            </div>
+            <div class="weather">Rainy</div>
+          </div>
+        </div>
+      </div>
+      <div class="right">
+        <div class="search-box">
+          <input type="text" id="input" placeholder="Another location" />
+          <div class="search-icon">
+            <ion-icon name="search-outline"></ion-icon>
+          </div>
+        </div>
+
+        <div class="cities">
+          <ul class="cities-list">
+            <li class="city">India</li>
+            <li class="city">New York</li>
+            <li class="city">California</li>
+            <li class="city">Manchester</li>
+          </ul>
+        </div>
+        <div class="weather-details">
+          <h3 class="details-head">Weather Details</h3>
+          <ul class="weather-details-list">
+            <li class="weather-details-list-item">
+              <p class="property">Pressure</p>
+              <p class="value" id="pressure">86%</p>
+            </li>
+
+            <li class="weather-details-list-item">
+              <p class="property">Humidity</p>
+              <p class="value" id="humidity">63%</p>
+            </li>
+
+            <li class="weather-details-list-item">
+              <p class="property">Wind</p>
+              <p class="value" id="wind">8km/h</p>
+            </li>
+
+            <!-- <li class="weather-details-list-item">
+              <p class="property">Rain</p>
+              <p class="value">8mm</p>
+            </li> -->
+          </ul>
+        </div>
+      </div>
+    </main>
+    <script src="./script.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>

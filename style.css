@@ -218,5 +218,9 @@ main {
 @media screen and (max-width: 480px) {
   .info {
     display: block;
+    left: 40px;
+  }
+  .left {
+    /* margin-left: 40px; */
   }
 }

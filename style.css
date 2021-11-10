@@ -117,17 +117,13 @@ main {
   position: relative;
   width: 90%;
   list-style: none;
-  margin-top: 20px;
+  height: 35vh;
+  overflow: scroll;
+
+  /* margin-top: 20px; */
   /* background-color: #fff; */
 }
-.cities-list::before {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 2px;
-  background-color: rgba(255, 255, 255, 0.4);
-  bottom: -40px;
-}
+
 .city {
   /* margin-top: 30px; */
   padding: 15px 10px;
@@ -142,7 +138,7 @@ main {
 
 .weather-details {
   margin-left: 3rem;
-  margin-top: 5rem;
+  margin-top: 3rem;
   color: rgba(255, 255, 255, 0.4);
 }
 .details-head {
@@ -163,4 +159,64 @@ main {
 
 .weather-details-list-item > .value {
   color: #fff;
+}
+
+.dropdown {
+  width: 90%;
+  padding: 10px 5px;
+  display: flex;
+  color: #fff;
+  align-items: center;
+  margin-top: 20px;
+  cursor: pointer;
+  justify-content: space-between;
+  transition: 0.3s ease;
+}
+
+.dropdown:hover {
+  background-color: rgba(255, 255, 255, 0.4);
+}
+
+.dropdown > h3 {
+  font-weight: 400;
+  color: #fff;
+}
+.hide {
+  display: none;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+/* responsive */
+/* Tab */
+
+@media screen and (max-width: 1000px) {
+  main {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 680px) {
+  .degree {
+    font-size: 4rem;
+  }
+
+  .degree::before {
+    width: 10px;
+    height: 10px;
+    border: 5px solid white;
+    top: 10px;
+  }
+
+  .info {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .info {
+    display: block;
+  }
 }
